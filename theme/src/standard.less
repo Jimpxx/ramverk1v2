@@ -165,11 +165,17 @@ img.responsive {
 @import 'layout/layout_v2.less';
 @import 'layout/dbwebb-se_v2.less'; // Rearrange and move classic style to layout.less
 @import 'layout/regions.less';
+@import 'layout/additional_layout.less';
 
 .site-logo {
     position: absolute;
     top: 40px;
     left: 40px;
+    display: none;
+}
+
+.site-logo-text-icon {
+    display: none;
 }
 
 .site-logo-text {
@@ -213,7 +219,7 @@ img.responsive {
 @colorH3BorderBottom: #eee;
 @colorH4BorderBottom: #eee;
 
-@magicNumber: 24px;
+@magicNumber: 28px;
 @fontSizeBody: 20px;
 // @fontSizeBody: 16px;
 
