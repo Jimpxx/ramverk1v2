@@ -4757,7 +4757,7 @@ template {
  */
 .author-byline {
   border: 1px solid #ccc;
-  margin-bottom: 46px;
+  margin-bottom: 54px;
   padding: 1em;
 }
 .author-byline::after {
@@ -4776,7 +4776,7 @@ template {
  */
 .ly-gallery {
   width: 670px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   color: #999;
 }
 .ly-gallery a {
@@ -4925,7 +4925,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
  */
 .image-overlay {
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 .image-overlay .figure {
   display: block;
@@ -4972,7 +4972,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .info,
 .warning {
   padding: 0.5em;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .info .icon,
 .warning .icon {
@@ -5003,7 +5003,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .revision-history {
   list-style: none;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   padding-left: 0;
   color: #666;
 }
@@ -5096,7 +5096,7 @@ html.vgrid .inner-wrap.inner-wrap-footer {
      */
 }
 html.hgrid .inner-wrap {
-  background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 23px, #f4e3d7 23px, #f4e3d7 24px);
+  background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 27px, #f4e3d7 27px, #f4e3d7 28px);
 }
 /**
  * Figure and figcaption mixins, namespace #desinax-figure. You must enable
@@ -5118,7 +5118,7 @@ figure.codepen {
   display: table;
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   /* Chrome shinks images in td */
   /* Position the images */
 }
@@ -5129,7 +5129,7 @@ figure.figure img {
 figure.figure figcaption {
   display: table-caption;
   caption-side: bottom;
-  padding-top: 12px;
+  padding-top: 14px;
 }
 figure.figure figcaption p {
   margin-top: 0;
@@ -5296,7 +5296,7 @@ h4:hover .header-anchor {
  * Next and previous navigation.
  */
 .next-previous {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 .next-previous .next,
 .next-previous .previous {
@@ -5307,7 +5307,7 @@ h4:hover .header-anchor {
   text-align: right;
 }
 .blog-toc-next-prev-page {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 .blog-toc-next-prev-page .next,
 .blog-toc-next-prev-page .previous,
@@ -5341,7 +5341,7 @@ h4:hover .header-anchor {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   /*
     .level-0 {
         margin-bottom: @magicNumber / 2;
@@ -5363,8 +5363,8 @@ h4:hover .header-anchor {
 .toc .section-header {
   font-weight: bold;
   border-bottom: 1px solid #eee;
-  margin-top: 24px;
-  margin-bottom: 12px;
+  margin-top: 28px;
+  margin-bottom: 14px;
 }
 .toc .selected {
   background-color: #eee;
@@ -5384,9 +5384,9 @@ h4:hover .header-anchor {
 }
 .breadcrumb-list,
 .bullet-list {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   font-size: 0.875em;
-  line-height: 1.37142857;
+  line-height: 1.6;
 }
 .breadcrumb-list li a,
 .bullet-list li a {
@@ -5432,14 +5432,14 @@ a:hover {
  */
 .blog-list header h1,
 .blog-post header h1 {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .blog-list .meta-header,
 .blog-post .meta-header,
 .blog-list .meta-footer,
 .blog-post .meta-footer {
   font-size: 0.875em;
-  line-height: 1.37142857;
+  line-height: 1.6;
   font-style: italic;
   color: #666;
 }
@@ -5479,11 +5479,11 @@ a:hover {
   content: "";
 }
 .blog-list {
-  margin-top: 48px;
+  margin-top: 56px;
 }
 .blog-list h1 {
   font-size: 1.875em;
-  line-height: 1.28;
+  line-height: 1.49333333;
   border-bottom: 1px solid #ccc;
 }
 .blog-list h1 a {
@@ -5498,7 +5498,7 @@ a:hover {
   border-bottom: 1px solid #ccc;
 }
 .blog-list-item {
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 .blog-list-item::after {
   content: "";
@@ -5509,7 +5509,7 @@ a:hover {
   margin-top: 0;
 }
 .blog-toc .toc li {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .blog-toc .toc li a {
   color: inherit;
@@ -5565,7 +5565,7 @@ textarea.nowrap {
   height: 15em;
 }
 fieldset {
-  padding-top: 24px;
+  padding-top: 28px;
 }
 .span10 {
   width: 400px;
@@ -5605,7 +5605,7 @@ body {
   padding: 0;
   color: #111;
   background-color: #fff;
-  font: 20px/1.2 Verdana, Geneva, sans-serif;
+  font: 20px/1.4 Verdana, Geneva, sans-serif;
 }
 h1,
 h2,
@@ -5614,8 +5614,8 @@ h4,
 h5,
 h6 {
   font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 28px;
+  margin-bottom: 28px;
 }
 h1 img,
 h2 img,
@@ -5627,10 +5627,10 @@ h6 img {
 }
 h1 {
   font-size: 2.375em;
-  line-height: 1.01052632;
+  line-height: 1.17894737;
   font-weight: normal;
   border-bottom: 1px solid #666;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 }
 h1 ~ h1,
 h1 ~ h2,
@@ -5638,58 +5638,58 @@ h1 ~ h3,
 h1 ~ h4,
 h1 ~ h5,
 h1 ~ h6 {
-  margin-top: 48px;
+  margin-top: 56px;
 }
 h1 + h2 {
-  margin-top: 24px;
+  margin-top: 28px;
 }
 h2 {
   font-size: 1.875em;
-  line-height: 1.28;
+  line-height: 1.49333333;
   font-weight: normal;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
   border-bottom: 1px solid #ccc;
 }
 h2 + h3 {
-  margin-top: 24px;
+  margin-top: 28px;
 }
 h3 {
   font-size: 1.75em;
-  line-height: 1.37142857;
+  line-height: 1.6;
   font-weight: normal;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
   border-bottom: 1px solid #eee;
 }
 h3 + h4 {
-  margin-top: 24px;
+  margin-top: 28px;
 }
 h4 {
   font-size: 1.5em;
-  line-height: 1.6;
+  line-height: 1.86666667;
   font-weight: normal;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
   border-bottom: 1px solid #eee;
 }
 h4 + h5 {
-  margin-top: 24px;
+  margin-top: 28px;
 }
 h5 {
   font-size: 1.25em;
-  line-height: 1.92;
-  margin-bottom: 23px;
+  line-height: 1.12;
+  margin-bottom: 27px;
   border-bottom: 1px solid #EEE;
 }
 h5 + h6 {
-  margin-top: 24px;
+  margin-top: 28px;
 }
 h6 {
   font-size: 1.25em;
-  line-height: 1.92;
-  margin-bottom: 23px;
+  line-height: 1.12;
+  margin-bottom: 27px;
   border-bottom: 1px solid #EEE;
 }
 p {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 small,
 .small,
@@ -5730,7 +5730,7 @@ blockquote {
   border-left: 4px solid #eee;
   padding-left: 1em;
   margin-left: 0;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 pre,
 code,
@@ -5756,7 +5756,7 @@ pre code {
   white-space: pre;
 }
 pre {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 pre code {
   display: block;
@@ -5766,21 +5766,21 @@ div.code,
 pre code {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 23px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 27px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   padding-left: 0.5em;
   background-color: #eee;
 }
 ul,
 ol {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   padding-left: 1.5em;
 }
 ul p,
 ol p {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 ul ul,
 ol ul,
@@ -5795,7 +5795,7 @@ ol {
   list-style-type: decimal;
 }
 dl {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 dl.horizontal dt {
   clear: left;
@@ -5813,7 +5813,7 @@ article table,
 .table,
 .table1,
 .table2 {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 table.full-width,
 article .table,
@@ -5834,7 +5834,7 @@ article table caption,
 .table caption,
 .table2 caption {
   font-size: 0.875em;
-  line-height: 1.37142857;
+  line-height: 1.6;
   text-align: left;
   font-style: italic;
 }
@@ -5856,7 +5856,7 @@ article table th,
 article table td,
 .table td,
 .table2 td {
-  padding: 6px;
+  padding: 7px;
 }
 article table tr,
 .table tr,
@@ -5880,8 +5880,8 @@ hr {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  margin-top: 35px;
-  margin-bottom: 36px;
+  margin-top: 41px;
+  margin-bottom: 42px;
 }
 hr::after {
   content: "§";
@@ -6490,7 +6490,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  *
  */
 .wrap-sidebar .block {
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 /** ==============================================================
  * The footer area.
@@ -6536,8 +6536,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * A header style for dbwebb.se.
  */
 .outer-wrap-header {
-  height: 48px;
-  margin-bottom: 12px;
+  height: 56px;
+  margin-bottom: 14px;
 }
 .outer-wrap-header img {
   outline: 0;
@@ -6703,34 +6703,34 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   }
 }
 .outer-wrap-after-main {
-  margin-top: -48px;
+  margin-top: -56px;
 }
 /** ==============================================================
  * Column above and below
  *
  */
 .inner-wrap-columns-above {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 /** ==============================================================
  * Main
  *
  */
 .inner-wrap-main {
-  padding-bottom: 48px;
+  padding-bottom: 56px;
 }
 /** ==============================================================
  * Article and Sidebar blocks
  *
  */
 .article {
-  margin-bottom: 72px;
+  margin-bottom: 84px;
 }
 .article .block,
 .sidebar .block,
 .columns-above .block,
 .columns-below .block {
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 .article .block h4,
 .sidebar .block h4,
@@ -6786,14 +6786,14 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 .outer-wrap-footer {
   background-color: #424242;
-  padding-top: 24px;
-  padding-bottom: 48px;
+  padding-top: 28px;
+  padding-bottom: 56px;
 }
 .footer-column-wrapper {
   color: #ddd;
   border-bottom: 1px solid #666;
-  padding-bottom: 24px;
-  margin-bottom: 48px;
+  padding-bottom: 28px;
+  margin-bottom: 56px;
 }
 .footer-column-wrapper ul {
   list-style: none;
@@ -6804,7 +6804,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: inherit;
 }
 .footer-column-x {
-  padding-bottom: 24px;
+  padding-bottom: 28px;
   padding-right: 1em;
 }
 .footer-column-1,
@@ -6818,7 +6818,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .site-footer {
   color: #aaa;
   text-align: center;
-  padding-bottom: 24px;
+  padding-bottom: 28px;
 }
 .site-footer ul {
   margin: 0;
@@ -6868,7 +6868,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Route specific style.
  */
 .route- .outer-wrap-flash {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 .route- .article {
   margin-bottom: 0;
@@ -6910,10 +6910,21 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   border: 1px solid #6cbac4;
   color: #111;
 }
+.inner-wrap-flash {
+  max-width: 100%;
+  width: 100%;
+}
+.inner-wrap-flash .row {
+  width: 100%;
+}
 .site-logo {
   position: absolute;
   top: 40px;
   left: 40px;
+  display: none;
+}
+.site-logo-text-icon {
+  display: none;
 }
 .site-logo-text {
   font-family: "Times New Roman", Times, serif;
