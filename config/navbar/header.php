@@ -48,6 +48,16 @@ return [
             "url" => "json",
             "title" => "Use our API",
         ],
+        [
+            "text" => "IP Geo",
+            "url" => "geo",
+            "title" => "IP Geotag",
+        ],
+        [
+            "text" => "IP Geo API",
+            "url" => "apigeo",
+            "title" => "IP Geotag API",
+        ],
         // [
         //     "text" => "Styleväljare",
         //     "url" => "style",
