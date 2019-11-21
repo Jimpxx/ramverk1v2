@@ -31,6 +31,31 @@ return [
                         "url" => "redovisning/kmom02",
                         "title" => "Redovisning för kmom02.",
                     ],
+                    [
+                        "text" => "Kmom03",
+                        "url" => "redovisning/kmom03",
+                        "title" => "Redovisning för kmom03.",
+                    ],
+                    [
+                        "text" => "Kmom04",
+                        "url" => "redovisning/kmom04",
+                        "title" => "Redovisning för kmom04.",
+                    ],
+                    [
+                        "text" => "Kmom05",
+                        "url" => "redovisning/kmom05",
+                        "title" => "Redovisning för kmom05.",
+                    ],
+                    [
+                        "text" => "Kmom06",
+                        "url" => "redovisning/kmom06",
+                        "title" => "Redovisning för kmom06.",
+                    ],
+                    [
+                        "text" => "Kmom10",
+                        "url" => "redovisning/kmom10",
+                        "title" => "Redovisning för kmom10.",
+                    ],
                 ],
             ],
         ],
@@ -40,14 +65,34 @@ return [
             "title" => "Om denna webbplats.",
         ],
         [
-            "text" => "Styleväljare",
-            "url" => "style",
-            "title" => "Välj stylesheet.",
+            "text" => "IP",
+            "url" => "ip",
+            "title" => "Validate an IP.",
         ],
         [
-            "text" => "Verktyg",
-            "url" => "verktyg",
-            "title" => "Verktyg och möjligheter för utveckling.",
+            "text" => "IP API",
+            "url" => "json",
+            "title" => "Use our API",
         ],
+        [
+            "text" => "IP Geo",
+            "url" => "geo",
+            "title" => "IP Geotag",
+        ],
+        [
+            "text" => "IP Geo API",
+            "url" => "apigeo",
+            "title" => "IP Geotag API",
+        ],
+        // [
+        //     "text" => "Styleväljare",
+        //     "url" => "style",
+        //     "title" => "Välj stylesheet.",
+        // ],
+        // [
+        //     "text" => "Verktyg",
+        //     "url" => "verktyg",
+        //     "title" => "Verktyg och möjligheter för utveckling.",
+        // ],
     ],
 ];
