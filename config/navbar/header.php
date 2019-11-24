@@ -83,6 +83,11 @@ return [
             "url" => "apigeo",
             "title" => "IP Geotag API",
         ],
+        [
+            "text" => "Weather",
+            "url" => "weather",
+            "title" => "Get Weather",
+        ],
         // [
         //     "text" => "Styleväljare",
         //     "url" => "style",
