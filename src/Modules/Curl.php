@@ -77,7 +77,7 @@ class Curl
         // strtotime('-1 day', $todayTime);
         
         $i = 1;
-        while ($i < 10) {
+        while ($i <= 3) {
             $ch = curl_init("$url,$time");
             curl_setopt_array($ch, $options);
             curl_multi_add_handle($mh, $ch);
