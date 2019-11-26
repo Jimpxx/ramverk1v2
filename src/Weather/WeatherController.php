@@ -116,14 +116,15 @@ class WeatherController implements ContainerInjectableInterface
 
         $curl = new Curl();
 
+        $error = 0;
         $type = "";
 
         if ($time == "future") {
             $weatherInfo = $curl->s_curl($searchOptions); // Single Curl
-            $type = "single";
+            // $type = "single";
         } else if ($time == "past") {
             $weatherInfo = $curl->m_curl($searchOptions); // Multi Curl
-            $type = "multi";
+            // $type = "multi";
         }
 
 
@@ -134,6 +135,7 @@ class WeatherController implements ContainerInjectableInterface
             "ipInfo" => $ipInfo,
             "test" => $test,
             "type" => $type,
+            "error" => $error,
             "weatherInfo" => $weatherInfo
         ];
 
