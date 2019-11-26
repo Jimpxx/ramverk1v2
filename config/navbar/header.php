@@ -88,6 +88,11 @@ return [
             "url" => "weather",
             "title" => "Get Weather",
         ],
+        [
+            "text" => "Weather API",
+            "url" => "apiweather",
+            "title" => "An API for getting the Weather",
+        ],
         // [
         //     "text" => "Styleväljare",
         //     "url" => "style",

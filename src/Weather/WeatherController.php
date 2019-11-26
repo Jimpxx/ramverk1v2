@@ -97,10 +97,11 @@ class WeatherController implements ContainerInjectableInterface
 
         if ($searchType == "ip") {
             $test = "IP";
-            // $module = new IpModule();
-            // $module = new \Jiad\Modules\GeoTag();
-            $geoTag = new GeoTag();
-            $ipInfo = $geoTag->getGeoInfo($search);
+
+            $geotag = $this->di->get("geotag");
+            // $geotag = new GeoTag();
+            
+            $ipInfo = $geotag->getGeoInfo($search);
 
             // // $info = $module->getGeoInfo($ip);
             // $info = $module->getGeoInfo($ip);

@@ -13,9 +13,9 @@ namespace Anax\View;
 <div id="map"></div>
 
 
-<?php if ($time == "future" && !$weatherInfo->error){ ?>
+<?php if ($time == "future"){ ?>
 
-<?php if (!$weatherInfo->error){ ?>
+<?php if (property_exists($weatherInfo, "daily")){ ?>
 
 <h2>Summary of the weather for the future:</h2>
 
@@ -48,7 +48,7 @@ namespace Anax\View;
 
 <?php if ($time == "past"){ ?>
 
-<?php if (!$weatherInfo["0"]["error"]){ ?>
+<?php if (count($weatherInfo["0"]) > 2){ ?>
 
 <h2>The weather for the past 30 days</h2>
 
