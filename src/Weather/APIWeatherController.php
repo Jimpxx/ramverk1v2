@@ -91,8 +91,10 @@ class APIWeatherController implements ContainerInjectableInterface
             "long" => $ipInfo->longitude
         ];
 
-        $curl = new Curl();
-        $weatherInfo = $curl->s_curl($searchOptions); // Single Curl
+        // $curl = new Curl();
+        $curl = $this->di->get("curl");
+        
+        $weatherInfo = $curl->sCurl($searchOptions); // Single Curl
 
 
         return [[$weatherInfo]];
@@ -132,8 +134,10 @@ class APIWeatherController implements ContainerInjectableInterface
             "long" => $ipInfo->longitude
         ];
 
-        $curl = new Curl();
-        $weatherInfo = $curl->m_curl($searchOptions); // Single Curl
+        // $curl = new Curl();
+        $curl = $this->di->get("curl");
+
+        $weatherInfo = $curl->mCurl($searchOptions); // Single Curl
 
         return [[$weatherInfo]];
         // $result = [];

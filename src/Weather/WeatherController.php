@@ -86,14 +86,19 @@ class WeatherController implements ContainerInjectableInterface
         $title = "Weather Result";
 
         // Post
-        // $ip = $this->di->request->getPost("ip");
-        // $city = $this->di->request->getPost("city");
+        // $long = $this->di->request->getPost("long");
+        // $lat = $this->di->request->getPost("lat");
         $searchType = $this->di->request->getPost("searchType");
         $search = $this->di->request->getPost("search");
         $time = $this->di->request->getPost("time");
-        $doWeather = $this->di->request->getPost("doWeather");
+        // $doWeather = $this->di->request->getPost("doWeather");
 
         $test = "";
+
+        // $searchOptions = [
+        //     // "lat" => $ipInfo->latitude,
+        //     // "long" => $ipInfo->longitude
+        // ];
 
         if ($searchType == "ip") {
             $test = "IP";
@@ -103,28 +108,36 @@ class WeatherController implements ContainerInjectableInterface
             
             $ipInfo = $geotag->getGeoInfo($search);
 
+            // $searchOptions["lat"] = $ipInfo->latitude;
+            // $searchOptions["long"] = $ipInfo->longitude;
+
             // // $info = $module->getGeoInfo($ip);
             // $info = $module->getGeoInfo($ip);
-        } else if ($searchType == "city") {
-            $test = "CITY";
-            $ipInfo = "CITY";
         }
+        // else if ($searchType == "coordinates") {
+        //     $test = "CITY";
+        //     $ipInfo = "CITY";
+
+        //     $searchOptions["lat"] = $lat;
+        //     $searchOptions["long"] = $long;
+        // }
 
         $searchOptions = [
             "lat" => $ipInfo->latitude,
             "long" => $ipInfo->longitude
         ];
 
-        $curl = new Curl();
+        // $curl = new Curl();
+        $curl = $this->di->get("curl");
 
         $error = 0;
         $type = "";
 
         if ($time == "future") {
-            $weatherInfo = $curl->s_curl($searchOptions); // Single Curl
+            $weatherInfo = $curl->sCurl($searchOptions); // Single Curl
             // $type = "single";
         } else if ($time == "past") {
-            $weatherInfo = $curl->m_curl($searchOptions); // Multi Curl
+            $weatherInfo = $curl->mCurl($searchOptions); // Multi Curl
             // $type = "multi";
         }
 

@@ -5,7 +5,7 @@ namespace Jiad\Modules;
 use Anax\Session\SessionInterface;
 
 /**
- * 
+ *
  */
 class Curl
 {
@@ -17,7 +17,7 @@ class Curl
      * @return self
      */
     // Maybe a string with only url to make it more standardized?
-    public function s_curl(array $search) : object
+    public function sCurl(array $search) : object
     {
         // Break out?
         $key = require(ANAX_INSTALL_PATH . "/config/api_key.php");
@@ -51,7 +51,7 @@ class Curl
      * @return self
      */
     // Maybe a string with only url to make it more standardized?
-    public function m_curl(array $search) : array
+    public function mCurl(array $search) : array
     {
         // Break out?
         $key = require(ANAX_INSTALL_PATH . "/config/api_key.php");
@@ -77,7 +77,7 @@ class Curl
         // strtotime('-1 day', $todayTime);
         
         $i = 1;
-        while ($i <= 3) {
+        while ($i <= 30) {
             $ch = curl_init("$url,$time");
             curl_setopt_array($ch, $options);
             curl_multi_add_handle($mh, $ch);
@@ -106,7 +106,8 @@ class Curl
             $response[] = json_decode($data, true);
         }
 
-        return $response;
+        return json_decode(json_encode($response), false);
+        // return $response;
         
         
         
