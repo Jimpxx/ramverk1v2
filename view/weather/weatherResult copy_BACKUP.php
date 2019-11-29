@@ -44,26 +44,24 @@ namespace Anax\View;
 
 
 <?php if ($time == "past") { ?>
-    <?php if (property_exists($weatherInfo[0], "daily")) { ?>
-        <!-- count($weatherInfo["0"]) > 2 -->
-        <!-- property_exists($weatherInfo[0], "daily" -->
+    <?php if (count($weatherInfo["0"]) > 2) { ?>
 <h2>The weather for the past 30 days</h2>
 
         <?php foreach ($weatherInfo as $key => $value) : ?>
     <div>
-        <h4><?= gmdate("Y-m-d\ H:i:s", $value->daily->data[0]->time) ?></h4>
-        <p>Summary: <?= $value->daily->data[0]->summary ?></p>
-        <p>Sunrise: <?= gmdate("H:i:s", $value->daily->data[0]->sunriseTime) ?></p>
-        <p>Sunset: <?= gmdate("H:i:s", $value->daily->data[0]->sunsetTime) ?></p>
-        <p>Temperature High: <?= round(($value->daily->data[0]->temperatureHigh - 32) * 5/9, 2) ?> Celcius</p>
-        <p>Temperature Low: <?= round(($value->daily->data[0]->temperatureLow - 32) * 5/9, 2) ?> Celcius</p>
+        <h4><?= gmdate("Y-m-d\ H:i:s", $value["daily"]["data"][0]["time"]) ?></h4>
+        <p>Summary: <?= $value["daily"]["data"][0]["summary"] ?></p>
+        <p>Sunrise: <?= gmdate("H:i:s", $value["daily"]["data"][0]["sunriseTime"]) ?></p>
+        <p>Sunset: <?= gmdate("H:i:s", $value["daily"]["data"][0]["sunsetTime"]) ?></p>
+        <p>Temperature High: <?= round(($value["daily"]["data"][0]["temperatureHigh"] - 32) * 5/9, 2) ?> Celcius</p>
+        <p>Temperature Low: <?= round(($value["daily"]["data"][0]["temperatureLow"] - 32) * 5/9, 2) ?> Celcius</p>
     </div>
         <?php endforeach; ?>
 
     <?php } else { ?>
 <p>Not able to fetch weather info</p>
-<code><?= $weatherInfo[0]->error ?></code>
-<!-- $weatherInfo["0"]["error"] -->
+<code><?= $weatherInfo["0"]["error"] ?></code>
+
     <?php } ?>
 
 <?php } ?>

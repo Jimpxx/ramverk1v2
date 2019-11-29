@@ -5,27 +5,34 @@ namespace Anax\View;
 ?>
 
 
-<h1>Get info about the weather based on your IP or enter a City</h1>
+<h1>Get info about the weather based on your IP</h1>
 
 <form method="post">
     <fieldset>
     <legend>Weather</legend>
-
+<!-- 
     <p>
-    <label for="searchType">Do you want to search by IP or City?</label>
+    <label for="searchType">Do you want to search by IP or Coordinates?</label>
     </p>
     <p>
     <select name="searchType" id="searchType">
     <option value="ip" default>IP</option>
-    <option value="city">City</option>
+    <option value="coordinates">Coordinates</option>
     </select>
-    </p>
+    </p> -->
 
     <p>
-        <label>IP / City<br> 
+        <label>IP<br>
         <input type="text" name="search" value="<?= $client_ip ?>"/>
         </label>
     </p>
+<!-- 
+    <p>
+        <label>Coordinates<br>
+        <input type="text" name="long" placeholder="Longitude"/>
+        <input type="text" name="lat" placeholder="Latitude"/>
+        </label>
+    </p> -->
 
     <!-- <p>
         <label>IP:<br> 
