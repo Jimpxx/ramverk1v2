@@ -100,20 +100,20 @@ class WeatherController implements ContainerInjectableInterface
         //     // "long" => $ipInfo->longitude
         // ];
 
-        if ($searchType == "ip") {
-            $test = "IP";
+        // if ($searchType == "ip") {
+        //     $test = "IP";
 
-            $geotag = $this->di->get("geotag");
+        $geotag = $this->di->get("geotag");
             // $geotag = new GeoTag();
             
-            $ipInfo = $geotag->getGeoInfo($search);
+        $ipInfo = $geotag->getGeoInfo($search);
 
             // $searchOptions["lat"] = $ipInfo->latitude;
             // $searchOptions["long"] = $ipInfo->longitude;
 
             // // $info = $module->getGeoInfo($ip);
             // $info = $module->getGeoInfo($ip);
-        }
+        // }
         // else if ($searchType == "coordinates") {
         //     $test = "CITY";
         //     $ipInfo = "CITY";

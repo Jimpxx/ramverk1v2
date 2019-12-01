@@ -87,6 +87,6 @@ var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 
 
 <?php
-var_dump($weatherInfo);
-var_dump($ipInfo);
+// var_dump($weatherInfo);
+// var_dump($ipInfo);
 ?>
