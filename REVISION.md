@@ -1,6 +1,10 @@
 # Revision History
 
-## v2.0.1 (2019-11-29)
+## v3.0.1 (2019-12-01)
+
+-   Fixed some bugs.
+
+## v3.0.0 (2019-11-29)
 
 -   Done with kmom03.
 
