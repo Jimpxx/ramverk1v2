@@ -1,5 +1,9 @@
 # Revision History
 
+## v4.0.1 (2019-12-06)
+
+-   Done with kmom04.
+
 ## v4.0.0 (2019-12-04)
 
 -   Initial version before beginning kmom04.
