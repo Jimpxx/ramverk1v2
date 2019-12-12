@@ -1,5 +1,9 @@
 # Revision History
 
+## v5.0.0 (2019-12-12)
+
+-   Done with kmom05.
+
 ## v4.0.2 (2019-12-06)
 
 -   Updated the module to the latset version kmom04 done.
